@@ -1,5 +1,7 @@
 # groovy
 groovy learn
+![image](https://github.com/576403061lly/groovy/assets/19943444/e8bc2253-aa21-4877-9b43-8610d6771a6c)
+
 为什么要学习Groovy
         作为Java为主语言的程序员，Groovy作为Java平台上的脚本语言（动态语言）在兼容方面是有得天独厚的优势。接触过Aandroid开发的同学大家都已经接触到啦Gradle构建项目（Gradle构建也支持Java项目的构建），Gradle就是采用Groovy实现的用于构建项目的框架。还有就是新版本的idea推荐使用Gradle进行插件开发。当然以上只是从客观方面阐述Groovy技术的发展趋势（包含但不仅限于这些方面）来说明我们需要学习，从自身层面来说多学多益，或者说有技术追求或者技术理想的同学，多学一门技术也是对自己的提升。接下来就让我们一起走进Groovy的世界吧。
 
