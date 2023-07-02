@@ -21,7 +21,37 @@ Groovy对于Java开发人员来说很简单，因为Java和Groovy的语法非常
 各种标记语言，如XML和HTML原生支持。
 Groovy扩展了java.lang.Object。
 
+# 一、在Java中使用Groovy：
+添加Groovy的依赖到Java项目中。
+在Java代码中使用Groovy的类和脚本。Groovy代码可以直接在Java中执行，可以调用Groovy类的方法、访问其属性等。可以使用GroovyShell或GroovyClassLoader来执行Groovy脚本。
+# 二、在Groovy中使用Java：
+Groovy天生支持Java，可以直接使用Java类、调用Java方法等。Groovy代码可以与Java代码混合编写。
+在Groovy代码中使用Java类时，不需要额外的导入，直接使用即可。
+Groovy还提供了更简洁的语法和更强大的特性，例如闭包、扩展方法、动态类型等，可以更方便地编写代码。
+
+# Java调用Groovy的类和方法：
+描述：Java可以直接通过类路径访问Groovy的类和方法，将Groovy代码视为Java代码的一部分。可以调用Groovy类的方法、访问其属性等。
+不同：Java可以无缝地调用Groovy类和方法，就像调用Java代码一样。
+优点：简单直接，Groovy与Java代码混合编写非常方便。
+缺点：对于Groovy独有的特性，如闭包、动态类型等，Java可能无法完全理解。
+# Groovy调用Java的类和方法：
+描述：Groovy天生支持Java，可以直接使用Java类、调用Java方法等。Groovy代码可以与Java代码混合编写，无需额外导入。
+不同：Groovy与Java的集成非常融洽，可以自动导入Java类，直接使用Java的语法。
+优点：无缝集成，可以充分利用Java的生态系统和已有的库。
+缺点：Groovy在某些方面可能比Java更“动态”，这意味着在一些情况下可能会有性能和类型安全性的损失。
+# 使用GroovyShell执行Groovy脚本：
+描述：在Java代码中使用GroovyShell执行Groovy脚本代码块。可以动态加载和执行Groovy脚本。
+不同：通过GroovyShell的evaluate方法，可以在Java中执行动态的Groovy脚本代码。
+优点：能够在运行时动态执行Groovy脚本，灵活性高，方便快捷。
+# 缺点：动态执行脚本可能会带来一定的性能影响，并且需要额外的语法检查。
+使用GroovyClassLoader加载和执行Groovy脚本：
+描述：在Java中通过GroovyClassLoader加载和执行Groovy脚本，可以实现更灵活的脚本执行。
+不同：通过GroovyClassLoader加载Groovy脚本，可以获得对应的Class对象，并根据需要进行实例化和调用。
+优点：可以灵活地加载和执行Groovy脚本，并与Java代码进行交互。缺点：相对于GroovyShell，使用GroovyClassLoader需要更多的代码来实现加载和执行。
+
 # 下面是我的学习系列：欢迎大家三连
 Groovy系列一 Groovy基础语法：https://blog.csdn.net/lly576403061/article/details/130913526
 
 Groovy系列二 Groovy GDK：https://blog.csdn.net/lly576403061/article/details/130921886?spm=1001.2014.3001.5502
+
+Groovy系列三 Java SpringBoot 整合 Groovy：https://blog.csdn.net/lly576403061/article/details/131505699?spm=1001.2014.3001.5501
